@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravix AI | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-body: #0f172a;
+            --text-main: #e2e8f0;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            background: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 280px;
+            padding: 2rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-y: auto;
+        }
+
+        .content {
+            margin-left: 280px;
+            padding: 3rem;
+        }
+
+        code {
+            color: #f472b6;
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h4 class="fw-bold mb-4">Gravix AI Docs</h4>
+        <ul class="nav flex-column gap-2">
+            <li class="nav-item"><a href="#intro" class="nav-link text-white-50">Introduction</a></li>
+            <li class="nav-item"><a href="#structure" class="nav-link text-white-50">Folder Structure</a></li>
+            <li class="nav-item"><a href="#customization" class="nav-link text-white-50">Customization</a></li>
+            <li class="nav-item"><a href="#components" class="nav-link text-white-50">Components</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link text-primary mt-4">← Back to Demo</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="intro" class="mb-5">
+            <h1 class="display-5 fw-bold mb-3">Introduction</h1>
+            <p class="lead text-muted">Gravix AI is a next-generation AI SaaS template built with HTML5, CSS, and
+                a custom Vanilla JS motion engine.</p>
+        </div>
+
+        <div id="structure" class="mb-5">
+            <h2 class="h3 fw-bold mb-3">Folder Structure</h2>
+            <div class="glass-panel">
+                <pre>
+style.css          # Global Design System (Variables)
+app.js             # All interactions (Vanilla JS)
+index.html         # AI SaaS Demo
+crm.html           # CRM Dashboard Demo
+documentation.html # This file
+</pre>
+            </div>
+        </div>
+
+        <div id="customization" class="mb-5">
+            <h2 class="h3 fw-bold mb-3">Theme Customization</h2>
+            <p>Change the core colors in <code>style.css</code> using CSS variables.</p>
+            <div class="glass-panel">
+                <pre>
+:root {
+  --color-primary: #6366f1; /* Indigo */
+  --color-secondary: #8b5cf6; /* Violet */
+  --bg-body: #0f172a; /* Background */
+}
+</pre>
+            </div>
+        </div>
+
+        <div id="components" class="mb-5">
+            <h2 class="h3 fw-bold mb-3">Animation Attributes</h2>
+            <p>Use data attributes to trigger animations without writing JS.</p>
+            <div class="glass-panel">
+                <h5 class="text-white">Scroll Reveal</h5>
+                <p>Add <code>data-aos="fade-up"</code> to any element.</p>
+
+                <h5 class="text-white mt-4">3D Tilt</h5>
+                <p>Add <code>data-tilt</code> to any card container.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Next-Gen AI & SaaS Template with Anti-Gravity 3D Design System">
+  <title>Gravix | AI SaaS Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-body text-main">
+
+  <!-- Background Animated Mesh -->
+  <div class="bg-mesh"></div>
+
+  <!-- Animated Grid Pattern -->
+  <div class="animated-grid"></div>
+
+  <!-- 
+      =======================================================
+      COMPONENT: HEADER (Sticky, Glassmorphism, Responsive)
+      =======================================================
+    -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="#">
+        <img src="logo.svg" alt="Gravix AI" class="brand-logo" />
+        <span class="gradient-text">Gravix AI</span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <!-- Dark/Light Toggle -->
+          <button class="btn btn-link text-decoration-none p-2 border-0" id="theme-toggle" aria-label="Toggle Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-moon">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a href="#" class="btn btn-primary-glow btn-sm rounded-pill px-4">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 
+      =======================================================
+      COMPONENT: HERO SECTION (3D Depth, Floating Elements)
+      =======================================================
+    -->
+  <section id="hero" class="hero-section d-flex align-items-center position-relative">
+    <!-- Background Spheres for Parallax -->
+    <div class="floating-sphere sphere-1" data-speed="0.05"></div>
+    <div class="floating-sphere sphere-2" data-speed="0.08"></div>
+
+    <div class="container position-relative hero-content">
+      <div class="row align-items-center min-vh-75 pt-5 mt-5">
+        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-1" data-aos="fade-up">
+          <div
+            class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 mb-4">
+            <span class="d-flex align-items-center gap-2 small fw-semibold">
+              <span class="badge bg-primary rounded-circle p-1"></span> v2.0 Released
+            </span>
+          </div>
+          <h1 class="display-3 fw-bold mb-4 lh-sm text-balance">
+            <span class="gradient-text shimmer-text"
+              style="--gradient-text: linear-gradient(to right, #22d3ee, #818cf8);">Ship AI
+              Apps that are</span> <br />
+            <span class="gradient-text"><span id="typewriter-text">Scalable</span></span><span class="gradient-text"
+              style="animation: blink 1s infinite">|</span>
+          </h1>
+          <p class="lead text-muted mb-5 text-balance" style="max-width: 500px;">
+            A next-generation HTML5 template featuring subtle 3D depth, modular glassmorphism, and performance-first
+            architecture.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#" class="btn btn-primary-glow btn-lg hover-lift btn-magnetic">Start Building</a>
+            <a href="#demos"
+              class="btn btn-outline-light btn-lg rounded-pill px-4 border-2 d-flex align-items-center gap-2 hover-scale btn-magnetic shadow-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View Demos
+            </a>
+          </div>
+
+          <div class="mt-5 pt-4 d-flex align-items-center gap-4 border-top border-white border-opacity-10">
+            <div>
+              <div class="h3 fw-bold mb-0"><span class="counter-value" data-count="99">0</span>+</div>
+              <div class="small text-muted">Lighthouse Score</div>
+            </div>
+            <div>
+              <div class="h3 fw-bold mb-0"><span class="counter-value" data-count="20">0</span>+</div>
+              <div class="small text-muted">Awd. Components</div>
+            </div>
+            <div>
+              <div class="h3 fw-bold mb-0"><span class="counter-value" data-count="15">0</span>k+</div>
+              <div class="small text-muted">Active Users</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-2 position-relative" data-aos="fade-left" data-aos-delay="200">
+          <!-- 3D Robot Image Animation -->
+          <div class="tilt-container" data-tilt data-tilt-max="10" data-tilt-speed="1000" data-tilt-perspective="1200">
+            <div class="position-relative mx-auto" style="width: 350px;">
+              <div class="robot-body-glow" style="width: 400px; height: 400px; opacity: 0.5;"></div>
+              <img src="/ROBO.svg" alt="AI Robot" class="img-fluid floating-robot position-relative z-2"
+                style="filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- 
+      =======================================================
+      COMPONENT: FEATURES (Glass Cards, Tilt Effect)
+      =======================================================
+    -->
+  <section id="features" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row justify-content-center mb-5 text-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="text-primary fw-bold text-uppercase tracking-wider mb-2 small">Modular System</div>
+          <h2 class="display-5 fw-bold mb-3">Built for <span class="gradient-text">Future Scale</span></h2>
+          <p class="text-muted lead">Everything you need to build a world-class SaaS, generated with precision and
+            refined by craft.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Feature Card 1 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card h-100 p-4" data-tilt data-tilt-max="10" data-tilt-scale="1.02">
+            <div class="mb-4 d-inline-block p-3 rounded-circle bg-primary bg-opacity-10 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="h4 fw-bold mb-3">Modular Blocks</h3>
+            <p class="text-muted mb-0">Pre-built, atomic HTML5 components that snap together. Consistent padding,
+              margins, and typography out of the box.</p>
+          </div>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card h-100 p-4" data-tilt data-tilt-max="10" data-tilt-scale="1.02">
+            <div class="mb-4 d-inline-block p-3 rounded-circle bg-secondary bg-opacity-10 text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+              </svg>
+            </div>
+            <h3 class="h4 fw-bold mb-3">Subtle 3D Depth</h3>
+            <p class="text-muted mb-0">Layered glassmorphism and smooth parallax that adds premium feel without WebGL
+              heavy lifting.</p>
+          </div>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card h-100 p-4" data-tilt data-tilt-max="10" data-tilt-scale="1.02">
+            <div class="mb-4 d-inline-block p-3 rounded-circle bg-info bg-opacity-10 text-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="h4 fw-bold mb-3">Clean Export</h3>
+            <p class="text-muted mb-0">Semantic HTML5, logically grouped CSS, and commented codebase ready for
+              production or ThemeForest.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+      =======================================================
+      COMPONENT: INTERACTIVE CARDS (Glow Hover Effect)
+      =======================================================
+    -->
+  <section class="py-5">
+    <div class="container py-lg-5">
+      <div class="row mb-5 justify-content-center text-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <span class="text-secondary fw-bold text-uppercase tracking-wider small">Next-Gen UX</span>
+          <h2 class="display-6 fw-bold mb-3">Interactive <span class="gradient-text">Immersion</span></h2>
+          <p class="text-muted">Hover over these cards to see the spotlight glow effect in action.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="glow-card h-100 p-1">
+            <div class="glass-panel h-100 p-4 border-0 bg-dark">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="bg-primary bg-opacity-25 p-3 rounded-circle text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill">Real-time</span>
+              </div>
+              <h4 class="fw-bold mb-3">Instant Analytics</h4>
+              <p class="text-muted mb-0">Lighting fast data processing with edge computing. See changes as they happen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glow-card h-100 p-1">
+            <div class="glass-panel h-100 p-4 border-0 bg-dark">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="bg-secondary bg-opacity-25 p-3 rounded-circle text-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                    <path d="M12 2a10 10 0 0 1 10 10h-10V2z" opacity="0.5"></path>
+                  </svg>
+                </div>
+                <span class="badge bg-secondary bg-opacity-10 text-secondary rounded-pill">AI Core</span>
+              </div>
+              <h4 class="fw-bold mb-3">Predictive Models</h4>
+              <p class="text-muted mb-0">Forecast trends with 99% accuracy using our pre-trained transformer models.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glow-card h-100 p-1">
+            <div class="glass-panel h-100 p-4 border-0 bg-dark">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="bg-info bg-opacity-25 p-3 rounded-circle text-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <span class="badge bg-info bg-opacity-10 text-info rounded-pill">Secure</span>
+              </div>
+              <h4 class="fw-bold mb-3">Zero Trust</h4>
+              <p class="text-muted mb-0">Enterprise-grade security by default. We encrypt everything, everywhere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+      =======================================================
+      COMPONENT: TESTIMONIALS (Swiper Slider, Glass Cards)
+      =======================================================
+    -->
+  <section id="testimonials" class="py-5 overflow-hidden">
+    <div class="container position-relative">
+      <div class="row justify-content-center mb-5 text-center">
+        <div class="col-lg-6" data-aos="fade-up">
+          <h2 class="display-6 fw-bold mb-3">Trusted by <span class="gradient-text">Innovators</span></h2>
+          <p class="text-muted">Join 10,000+ founders building the future with Gravix AI.</p>
+        </div>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper pb-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="glass-panel p-4 h-100 mx-2">
+              <div class="d-flex text-warning mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="text-muted mb-4">"The 3D depth effects are incredible. It feels like a native app but runs
+                smoothly in the browser. Totally changed our conversion rates."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                  style="width: 40px; height: 40px;">JS</div>
+                <div>
+                  <div class="fw-bold fs-6">James Smith</div>
+                  <div class="small text-muted">CTO, TechFlow</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="glass-panel p-4 h-100 mx-2">
+              <div class="d-flex text-warning mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="text-muted mb-4">"Cleanest code I've seen in a HTML template. The modularity made it super easy
+                to integrate with our backend."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  class="bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                  style="width: 40px; height: 40px;">EL</div>
+                <div>
+                  <div class="fw-bold fs-6">Elena Lovato</div>
+                  <div class="small text-muted">Founder, StartUp</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="glass-panel p-4 h-100 mx-2">
+              <div class="d-flex text-warning mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                  stroke="none">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="text-muted mb-4">"The dark mode implementation is flawless. It's exactly the premium look we
+                wanted for our SaaS."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  class="bg-success rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                  style="width: 40px; height: 40px;">MK</div>
+                <div>
+                  <div class="fw-bold fs-6">Mike K.</div>
+                  <div class="small text-muted">DevOps Lead</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination position-relative mt-5"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+      =======================================================
+      COMPONENT: PRICING (Toggle Switch, Clean Layout)
+      =======================================================
+    -->
+  <section id="pricing" class="py-5 bg-dark-subtle bg-opacity-10">
+    <div class="container py-lg-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="display-6 fw-bold mb-4">Simple Pricing</h2>
+
+        <!-- Toggle -->
+        <div
+          class="d-inline-flex align-items-center bg-white bg-opacity-10 rounded-pill p-1 border border-white border-opacity-10">
+          <button class="btn btn-sm btn-primary rounded-pill px-4 fw-bold pricing-toggle"
+            data-period="monthly">Monthly</button>
+          <button class="btn btn-sm btn-transparent text-muted rounded-pill px-4 fw-bold pricing-toggle"
+            data-period="yearly">Yearly <span class="small text-success ms-1">-20%</span></button>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-center justify-content-center">
+        <!-- Free Plan -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="glass-panel p-5 h-100 border-0 bg-opacity-50">
+            <h3 class="h5 text-muted mb-4">Starter</h3>
+            <div class="display-4 fw-bold mb-4">$0<span class="fs-6 text-muted fw-normal">/mo</span></div>
+            <ul class="list-unstyled mb-5 vstack gap-3 text-muted">
+              <li class="d-flex align-items-center gap-2"><svg class="text-success" width="20" height="20"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> 1 Project</li>
+              <li class="d-flex align-items-center gap-2"><svg class="text-success" width="20" height="20"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Community Support</li>
+              <li class="d-flex align-items-center gap-2 text-opacity-50"><svg class="text-muted opacity-50" width="20"
+                  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg> No Advanced Grids</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light w-100 rounded-pill py-2">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-panel p-5 h-100 border-primary position-relative overflow-hidden">
+            <div
+              class="position-absolute top-0 end-0 bg-primary text-white text-xs px-3 py-1 rounded-bl-3 fw-bold small">
+              POPULAR</div>
+            <h3 class="h5 text-primary mb-4">Pro</h3>
+            <div class="display-4 fw-bold mb-4">
+              <span class="price-amount" data-monthly="29" data-yearly="240">$29</span>
+              <span class="fs-6 text-muted fw-normal frequency">/mo</span>
+            </div>
+            <ul class="list-unstyled mb-5 vstack gap-3">
+              <li class="d-flex align-items-center gap-2"><svg class="text-primary" width="20" height="20"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Unlimited Projects</li>
+              <li class="d-flex align-items-center gap-2"><svg class="text-primary" width="20" height="20"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> 3D Components</li>
+              <li class="d-flex align-items-center gap-2"><svg class="text-primary" width="20" height="20"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Priority Support</li>
+            </ul>
+            <a href="#" class="btn btn-primary-glow w-100">Get Pro Access</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 border-top border-white border-opacity-10 mt-5">
+    <div class="container text-center">
+      <div class="mb-4">
+        <span class="gradient-text h4 fw-bold">Gravix AI</span>
+      </div>
+      <p class="text-muted mb-4 copy-text">© 2024 Gravix AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
